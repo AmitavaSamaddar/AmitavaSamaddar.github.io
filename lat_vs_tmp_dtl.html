@@ -20,63 +20,55 @@ h1 {
   color:rgb(3, 248, 187);
   text-align-last: auto;
 }
+
+.detail-panel {
+      max-width: 1500px;
+      margin: auto;
+      float: auto;
+      padding-left: 15px;  
+      padding-right: 15px;
+      padding-top: 15px;
+        }
 </style>
 
 </head>
-<body>
+<body style="background-color: #ebedf0">
 
   <nav class="navbar-default">
-
     <div class="container-fluid">
-        
       <div class="navbar-header">
-        
         <a class="navbar-brand" href="index.html" title=Home >Latitude</a>
-            
-        </div>
-            
-        <ul class="nav navbar-nav navbar-right">
-          
+      </div>
+      <ul class="nav navbar-nav navbar-right">    
         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Plot <span class="caret"></span></a>
-          
           <ul class="dropdown-menu">
-        
             <li><a href="lat_vs_tmp_dtl.html">vs Max Temperature</a></li>
-          
             <li><a href="lat_vs_hum_dtl.html">vs Humidity</a></li>
-          
             <li><a href="lat_vs_cld_dtl.html">vs Cloudiness</a></li>
-          
             <li><a href="lat_vs_wnd_dtl.html">vs Wind Speed</a></li>
-        
           </ul>
-        
         </li>
-        
         <li> <a href="cmp.html">Compare</a></li>
-        
         <li><a href="city_data.html">Data</a></li>
-        
       </ul>
-      
     </div>
-    
   </nav>
       
   
-
-  <h1><b>&nbsp&nbsp Comparison: Latitude vs Max Temperature</b></h1>
-
-  <hr >
-  
-  
-  <p style='text-align: center'>
-
-    <img src="output_data/Lat_MaxTemp.png" width = "300" height= "300">
-
-  </p>
-
-  <p style="font-size:18px;"> The data is from early January, when is winter in northern hemisphere and summer in southern.  In the plot, we are observing negative max temp in high north latitudes, which showcases that it is winter in northern hemisphere and as we go further north, the temp is dropping.  Howerver, since it is summer in southern hemisphere, we observe most cities south or equator are above 40 F, having most high tempature observed around tropical area. Entering in antarctic circle (close to 60 deg south), the temparature comes down. Cities close to equator (having low latitude value, positive or negative) are quite warm.<br>
+  <div class="detail-panel">
+    <div class="panel panel-info">
+      <div class="panel-body">
+        <h1><b>Comparison: Latitude vs Max Temperature</b></h1>
+        <hr >
+        <p style='text-align: center'>
+          <img src="output_data/Lat_MaxTemp.png">
+        </p>
+        <p style="font-size:18px;">
+          The data is from early January, when is winter in northern hemisphere and summer in southern.  In the plot, we are observing negative max temp in high north latitudes, which showcases that it is winter in northern hemisphere and as we go further north, the temp is dropping.  Howerver, since it is summer in southern hemisphere, we observe most cities south or equator are above 40 F, having most high tempature observed around tropical area. Entering in antarctic circle (close to 60 deg south), the temparature comes down. Cities close to equator (having low latitude value, positive or negative) are quite warm.
+        </p>
+      </div>
+    </div>
+  </div>
 
 </body>
 </html>

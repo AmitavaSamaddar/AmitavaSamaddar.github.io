@@ -20,62 +20,56 @@ h1 {
   color:rgb(3, 248, 187);
   text-align-last: auto;
 }
+
+.detail-panel {
+      max-width: 1500px;
+      margin: auto;
+      float: auto;
+      padding-left: 15px;  
+      padding-right: 15px;
+      padding-top: 15px;
+        }
+
 </style>
 
 </head>
 
-<body>
+<body style="background-color: #ebedf0">
   
   <nav class="navbar-default">
-
     <div class="container-fluid">
-    
       <div class="navbar-header">
-    
         <a class="navbar-brand" href="index.html" title=Home >Latitude</a>
-    
       </div>
-    
       <ul class="nav navbar-nav navbar-right">
-    
         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Plot <span class="caret"></span></a>
-    
           <ul class="dropdown-menu">
-    
             <li><a href="lat_vs_tmp_dtl.html">vs Max Temperature</a></li>
-    
             <li><a href="lat_vs_hum_dtl.html">vs Humidity</a></li>
-    
             <li><a href="lat_vs_cld_dtl.html">vs Cloudiness</a></li>
-    
             <li><a href="lat_vs_wnd_dtl.html">vs Wind Speed</a></li>
-    
           </ul>
-    
         </li>
-    
         <li> <a href="cmp.html">Compare</a></li>
-    
         <li><a href="city_data.html">Data</a></li>
-    
       </ul>
-    
     </div>
-    
   </nav>
       
-  <h1><b>&nbsp&nbsp Comparison: Latitude vs Humidity</b></h1>
-  <hr >
-  
-  
-	<p style='text-align: center'>
-
-     <img src="output_data/Lat_Humidity.png" width = "300" height= "300">
-	</p>
-  <p style="font-size:18px;">January humidity data plot against latitude shows quite similar distribution in northern and southern hemisphere. As per data most of the cities are having 40% or more humidity with quite a few cities with 100% humidity.
-  </p>
-  
-</div>
+  <div class="detail-panel">
+    <div class="panel panel-info">
+      <div class="panel-body">
+        <h1><b>Comparison: Latitude vs Humidity</b></h1>
+        <hr >
+	      <p style='text-align: center'>
+          <img src="output_data/Lat_Humidity.png">
+    	  </p>
+        <p style="font-size:18px;">
+          January humidity data plot against latitude shows quite similar distribution in northern and southern hemisphere. As per data most of the cities are having 40% or more humidity with quite a few cities with 100% humidity.
+        </p>
+      </div>
+    </div> 
+  </div>
 
 
 
